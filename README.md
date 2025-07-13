@@ -24,8 +24,8 @@ Este projeto implementa um contador simples usando HTML, JavaScript e um pouco d
 ---
 
 ## Como usar
-
-1. Abra o arquivo `index.html` no navegador.
-2. Clique nos botões para alterar o valor do contador.
+1. Clone ou baixe este repositório
+2. Abra o arquivo `index.html` no navegador.
+3. Clique nos botões para alterar o valor do contador.
 
 ---
