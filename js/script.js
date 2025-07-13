@@ -1,25 +1,20 @@
-document.getElementById('incrementar').addEventListener('click', more1)
+    let container = document.getElementById('contador')
+
+    const operation = {
+        more: (valor) => valor + 1,
+        less: (valor) => valor - 1,
+        reset: () => 0
+    }
+
+
+
+    document.querySelectorAll('button[id]').forEach(button => {
+        button.addEventListener('click', () =>{
+            const operando = button.getAttribute('id')
+            const atualValor = Number(container.value)
+            container.value = operation[operando](atualValor)
+
+        })
+    })
+
     
-    function more1() {
-
-        const input = document.getElementById('contador');
-        let valorAtual = Number(input.value) || 0;
-        input.value = valorAtual + 1;
-    };
-
-    document.getElementById('less').addEventListener('click', less1);
-
-    function less1() {
-
-        const input = document.getElementById('contador');
-        let valorAtual = Number(input.value) || 0;
-        input.value = valorAtual - 1;
-    };
-
-    document.getElementById('reset').addEventListener('click', reset);
-
-    function reset() {
-
-        const input = document.getElementById('contador');
-        input.value = 0;
-    };
